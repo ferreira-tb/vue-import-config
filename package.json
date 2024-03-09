@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/vue-import-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Config for unplugin-vue-components",
   "license": "MIT",
   "type": "module",

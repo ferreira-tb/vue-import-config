@@ -6,7 +6,7 @@ export interface ConfigOptions {
 function config(options: ConfigOptions = {}) {
   return {
     dts: options.dts ?? './types/components.d.ts',
-    dirs: ['src/components', ...(options.dirs ?? [])],
+    dirs: ['./src/components', ...(options.dirs ?? [])],
     extensions: ['vue'],
     deep: true,
     version: 3
