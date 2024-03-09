@@ -1,0 +1,60 @@
+{
+  "name": "@tb-dev/vue-import-config",
+  "version": "1.0.8",
+  "description": "Config for unplugin-vue-components",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "packageManager": "pnpm@8.15.4",
+  "homepage": "https://github.com/ferreira-tb/vue-import-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferreira-tb/vue-import-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ferreira-tb/vue-import-config/issues"
+  },
+  "lint-staged": {
+    "*.{?(c|m)@(j|t)s,css,vue,md,json}": "prettier --write"
+  },
+  "scripts": {
+    "build": "vite build",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
+    "lint": "eslint . --config eslint.config.js --cache",
+    "prepare": "husky",
+    "release": "pnpm run build && pnpm publish",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.5",
+    "vite-plugin-dts": "^3.7.3"
+  },
+  "peerDependencies": {
+    "unplugin-vue-components": "^0.26.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  }
+}
