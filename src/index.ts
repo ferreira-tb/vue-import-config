@@ -1,12 +1,13 @@
 export interface ConfigOptions {
   dts?: string;
-  globs?: string[];
+  dirs?: string[];
 }
 
 function config(options: ConfigOptions = {}) {
   return {
     dts: options.dts ?? './types/components.d.ts',
-    globs: ['src/components/*.{vue}', ...(options.globs ?? [])],
+    dirs: ['src/components', ...(options.dirs ?? [])],
+    extensions: ['vue'],
     deep: true,
     version: 3
   };
