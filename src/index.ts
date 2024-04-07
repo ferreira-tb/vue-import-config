@@ -1,6 +1,9 @@
+import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
+
 export interface ConfigOptions {
   dts?: string;
   dirs?: string[];
+  primevue?: boolean;
 }
 
 function config(options: ConfigOptions = {}) {
@@ -9,7 +12,8 @@ function config(options: ConfigOptions = {}) {
     dirs: ['./src/components', ...(options.dirs ?? [])],
     extensions: ['vue'],
     deep: true,
-    version: 3
+    version: 3,
+    resolvers: [options.primevue && PrimeVueResolver({ prefix: 'p' })]
   };
 }
 
