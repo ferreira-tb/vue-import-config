@@ -6,15 +6,20 @@ export interface ConfigOptions {
   primevue?: boolean;
 }
 
-function config(options: ConfigOptions = {}) {
-  return {
+function defineConfig(options: ConfigOptions = {}) {
+  const config: Record<string, any> = {
     dts: options.dts ?? './types/components.d.ts',
     dirs: ['./src/components', ...(options.dirs ?? [])],
     extensions: ['vue'],
     deep: true,
-    version: 3,
-    resolvers: [options.primevue && PrimeVueResolver({ prefix: 'p' })]
+    version: 3
   };
+
+  if (options.primevue) {
+    config.resolvers = [PrimeVueResolver({ prefix: 'P' })];
+  }
+
+  return config;
 }
 
-export default config;
+export default defineConfig;
