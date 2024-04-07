@@ -8,10 +8,14 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     minify: false,
+    target: 'esnext',
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: 'index'
+    },
+    rollupOptions: {
+      external: [/^unplugin-vue-components/]
     }
   }
 });
