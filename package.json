@@ -1,11 +1,11 @@
 {
   "name": "@tb-dev/vue-import-config",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Config for unplugin-vue-components",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "packageManager": "pnpm@8.15.7",
+  "packageManager": "pnpm@9.0.6",
   "homepage": "https://github.com/ferreira-tb/vue-import-config",
   "repository": {
     "type": "git",
@@ -35,8 +35,8 @@
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
     "unplugin-vue-components": "^0.26.0",
-    "vite": "^5.2.8",
-    "vite-plugin-dts": "^3.8.3"
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.0"
   },
   "peerDependencies": {
     "unplugin-vue-components": "^0.26.0"
