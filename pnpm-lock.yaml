@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@tb-dev/eslint-config':
-        specifier: ^3.4.2
-        version: 3.4.2(eslint@8.57.0)(typescript@5.4.5)
+        specifier: ^3.4.3
+        version: 3.4.3(eslint@8.57.0)(typescript@5.4.5)
       '@types/node':
         specifier: ^20.12.8
         version: 20.12.8
@@ -39,8 +39,8 @@ importers:
         specifier: ^5.2.11
         version: 5.2.11(@types/node@20.12.8)
       vite-plugin-dts:
-        specifier: ^3.9.0
-        version: 3.9.0(@types/node@20.12.8)(rollup@4.13.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
+        specifier: ^3.9.1
+        version: 3.9.1(@types/node@20.12.8)(rollup@4.13.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8))
 
 packages:
 
@@ -57,10 +57,6 @@ packages:
 
   '@babel/helper-string-parser@7.23.4':
     resolution: {integrity: sha512-803gmbQdqwdf4olxrX4AJyFBV/RTr3rSmOj0rKwesmzlfhYNDEs+/iOcznzpNWlJlIlTJC2QfPFcHB6DlzdVLQ==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helper-validator-identifier@7.22.20':
-    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.24.5':
@@ -371,8 +367,8 @@ packages:
   '@rushstack/ts-command-line@4.19.1':
     resolution: {integrity: sha512-J7H768dgcpG60d7skZ5uSSwyCZs/S2HrWP1Ds8d1qYAyaaeJmpmmLr9BVw97RjFzmQPOYnoXcKA4GkqDCkduQg==}
 
-  '@tb-dev/eslint-config@3.4.2':
-    resolution: {integrity: sha512-bI7HmfpOmPB2dBpO5/kjJd2fff3ysI5oSMwiE3PVJjjE9VjHQ8gEypZDTEHAKt9duuccZAc17Aqb7BAjbPlSVg==}
+  '@tb-dev/eslint-config@3.4.3':
+    resolution: {integrity: sha512-YlxnzGco8vIlhLoLtFNnJD5mCkwhDqh8PpJx3v8Gh08gB2SUfbc2Enr1/sI9/WN7YJOyj4F92d6ijTux913O6Q==}
     engines: {node: '>=20'}
     peerDependencies:
       eslint: ^8.57.0
@@ -1100,10 +1096,6 @@ packages:
   magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
-  magic-string@0.30.8:
-    resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
-    engines: {node: '>=12'}
-
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
 
@@ -1132,10 +1124,6 @@ packages:
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
-
-  minimatch@9.0.3:
-    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
-    engines: {node: '>=16 || 14 >=14.17'}
 
   minimatch@9.0.4:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
@@ -1551,8 +1539,8 @@ packages:
     resolution: {integrity: sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==}
     engines: {node: '>= 0.10'}
 
-  vite-plugin-dts@3.9.0:
-    resolution: {integrity: sha512-pwFIEYQ3LZvMafkEGvNnileb6af5JuyZsBfYQrTDYxdeGEy0OS4B4hCsLPo5YGnhK5k9EzyO6BXVO6y+Lt5T2A==}
+  vite-plugin-dts@3.9.1:
+    resolution: {integrity: sha512-rVp2KM9Ue22NGWB8dNtWEr+KekN3rIgz1tWD050QnRGlriUCmaDwa7qA5zDEjbXg5lAXhYMSBJtx3q3hQIJZSg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       typescript: '*'
@@ -1664,8 +1652,6 @@ snapshots:
 
   '@babel/helper-string-parser@7.23.4': {}
 
-  '@babel/helper-validator-identifier@7.22.20': {}
-
   '@babel/helper-validator-identifier@7.24.5': {}
 
   '@babel/highlight@7.24.5':
@@ -1682,7 +1668,7 @@ snapshots:
   '@babel/types@7.24.0':
     dependencies:
       '@babel/helper-string-parser': 7.23.4
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.24.5
       to-fast-properties: 2.0.0
 
   '@esbuild/aix-ppc64@0.20.2':
@@ -1917,7 +1903,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@tb-dev/eslint-config@3.4.2(eslint@8.57.0)(typescript@5.4.5)':
+  '@tb-dev/eslint-config@3.4.3(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 7.8.0(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 7.8.0(eslint@8.57.0)(typescript@5.4.5)
@@ -2089,7 +2075,7 @@ snapshots:
       '@vue/compiler-dom': 3.4.21
       '@vue/shared': 3.4.21
       computeds: 0.0.1
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       muggle-string: 0.3.1
       path-browserify: 1.0.1
       vue-template-compiler: 2.7.16
@@ -2350,7 +2336,7 @@ snapshots:
 
   eslint-plugin-unicorn@52.0.0(eslint@8.57.0):
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.24.5
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@eslint/eslintrc': 2.1.4
       ci-info: 4.0.0
@@ -2745,10 +2731,6 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  magic-string@0.30.8:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-
   merge-stream@2.0.0: {}
 
   merge2@1.4.1: {}
@@ -2771,10 +2753,6 @@ snapshots:
   minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.11
-
-  minimatch@9.0.3:
-    dependencies:
-      brace-expansion: 2.0.1
 
   minimatch@9.0.4:
     dependencies:
@@ -3158,14 +3136,14 @@ snapshots:
 
   validator@13.11.0: {}
 
-  vite-plugin-dts@3.9.0(@types/node@20.12.8)(rollup@4.13.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8)):
+  vite-plugin-dts@3.9.1(@types/node@20.12.8)(rollup@4.13.0)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.8)):
     dependencies:
       '@microsoft/api-extractor': 7.43.0(@types/node@20.12.8)
       '@rollup/pluginutils': 5.1.0(rollup@4.13.0)
       '@vue/language-core': 1.8.27(typescript@5.4.5)
       debug: 4.3.4
       kolorist: 1.8.0
-      magic-string: 0.30.8
+      magic-string: 0.30.10
       typescript: 5.4.5
       vue-tsc: 1.8.27(typescript@5.4.5)
     optionalDependencies:
