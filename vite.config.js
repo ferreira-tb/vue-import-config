@@ -15,7 +15,7 @@ export default defineConfig({
       fileName: 'index'
     },
     rollupOptions: {
-      external: [/^unplugin-vue-components/]
+      external: [/^node:/, /^unplugin-vue-components/, 'vite']
     }
   }
 });
