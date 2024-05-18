@@ -1,4 +1,5 @@
 import type { Plugin } from 'vite';
+import RadixVueResolver from 'radix-vue/resolver';
 import components from 'unplugin-vue-components/vite';
 import { PrimeVueResolver } from 'unplugin-vue-components/resolvers';
 
@@ -7,6 +8,7 @@ export interface ConfigOptions {
   dts?: string;
   resolvers?: {
     primevue?: boolean;
+    radix?: boolean;
   };
 }
 
@@ -20,8 +22,17 @@ export default function plugin(options: ConfigOptions = {}): Plugin {
     version: 3
   };
 
+  const resolvers = [];
   if (options.resolvers?.primevue) {
-    config.resolvers = [PrimeVueResolver({ prefix: 'P' })];
+    resolvers.push(PrimeVueResolver({ prefix: 'P' }));
+  }
+
+  if (options.resolvers?.radix) {
+    resolvers.push(RadixVueResolver({ prefix: 'R' }));
+  }
+
+  if (resolvers.length > 0) {
+    config.resolvers = resolvers;
   }
 
   return components(config);

@@ -1,6 +1,6 @@
 {
   "name": "@tb-dev/vue-import-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Config for unplugin-vue-components",
   "license": "MIT",
   "type": "module",
@@ -40,6 +40,9 @@
     "tslib": "^2.6.2",
     "typescript": "^5.4.5",
     "vite-plugin-dts": "^3.9.1"
+  },
+  "peerDependencies": {
+    "radix-vue": "^1.8.0"
   },
   "engines": {
     "node": ">=20"
